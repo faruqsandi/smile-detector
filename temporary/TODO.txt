@@ -1,0 +1,5 @@
+1. pakai cascade smile
+2. download dataset banyak dari google
+3. uji
+
+4. kalo nggak bisa, coba diperbaiki ROI

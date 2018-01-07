@@ -1,0 +1,14 @@
+1.cascade.xml
+opencv_traincascade -data classifier -bg negatives.txt -numPos 100 -numNeg 1000 -numStages 20 \
+-precalcValBufSize 1024 -precalcIdxBufSize 1024 -numThreads 500 \
+-featureType LBP -w 32 -h 19 \
+-minHitRate 0.99 -maxFalseAlarmRate 0.5 -vec sample.vec 
+
+
+
+
+opencv_traincascade -data classifier -bg negatives.txt -numPos 300 -numNeg 3000 -numStages 20 \
+-precalcValBufSize 1024 -precalcIdxBufSize 1024 -numThreads 500 \
+-featureType LBP -mode All -w 32 -h 19 \
+-minHitRate 0.99 -maxFalseAlarmRate 0.5 -vec sample.vec 
+
