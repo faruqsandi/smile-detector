@@ -33,20 +33,30 @@ def detect(filename):
     faces=face_cascade.detectMultiScale(gray, 1.2, 5)
     #print(faces)
     smileCount=0
+    faceCount=0
     for (x,y,w,h) in faces:
-        #print("face" + str(faces.shape[0]))
+        #print("face" + str(faces.shape[0
+        faceCount+=1
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = img[y:y+h, x:x+w]
         windowed_gray = cv2.resize(roi_gray, (55, 55))
         smiles=smile_cascade.detectMultiScale(image=windowed_gray,scaleFactor=1.1,minNeighbors=6)
-        cv2.imshow('img',img)
-        cv2.waitKey(10)
         for (mx,my,mw,mh) in smiles:
             smileCount+=1
             cv2.putText(img=windowed_gray,text="senyum",org=(mx,my),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=0.5,color=(0,0,255),thickness=1)
             cv2.rectangle(windowed_gray,(mx,my),(mx+mw,my+mh),(0,0,255),1)
+            cv2.putText(img=img,text="wajah",org=(x,y),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=0.5,color=(0,0,255),thickness=1)
+            cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),1)
         cv2.imshow("window", windowed_gray)
-        cv2.waitKey(10)
+        cv2.waitKey(100)
+        cv2.imshow('img',img)
+        cv2.waitKey(1)
+        cv2.destroyAllWindows()
+    cv2.putText(img=img,text="Jumlah wajah= " + str(faceCount),org=(0,10),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=0.5,color=(0,0,255),thickness=1)
+    cv2.putText(img=img,text="Jumlah senyum= " + str(smileCount),org=(0,20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=0.5,color=(0,0,255),thickness=1)
+
+    cv2.imshow('img',img)
+    cv2.waitKey(0)
     cv2.destroyAllWindows()
     return smileCount
-(detect(filename)
+detect(filename)
