@@ -16,17 +16,17 @@ import numpy as np
 import argparse
 from detector import detect
 import os
+import glob
 
 argpar=argparse.ArgumentParser()
 argpar.add_argument("-img", required=True, help="path to input image")
 argpar.add_argument("-out",  action='store_true', help="path to output image")
 argpar.add_argument("-scale", required=False, type=float, help="output scale")
 args=vars(argpar.parse_args())
-filename=args["img"]
-
-img=cv2.imread(filename, 1)
-result=detect(img)
-if(args["out"]):
-    cv2.imwrite("out"+os.path.basename(filename), img)
-cv2.waitKey(0)
+filename=glob.glob(pathname=args["img"]+str("/*"))
+for f in filename:
+    img=cv2.imread(f, 1)
+    result=detect(img)
+    if(args["out"]):
+        cv2.imwrite("out"+str(os.path.basename(f)), img)
 cv2.destroyAllWindows()
