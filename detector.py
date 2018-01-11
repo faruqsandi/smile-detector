@@ -50,14 +50,14 @@ def detect(filename):
             smileCount+=1
             cv2.putText(img=windowed_gray,text="senyum",org=(mx,my),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=0.5,color=(0,0,255),thickness=1)
             cv2.rectangle(windowed_gray,(mx,my),(mx+mw,my+mh),(0,0,255),1)
-            #cv2.putText(img=img,text="wajah",org=(x,y),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=0.5,color=(0,0,255),thickness=1)
-            #cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),1)
+            cv2.putText(img=img,text="wajah",org=(x,y),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=0.5,color=(0,0,255),thickness=1)
+            cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),1)
 
         #menampilkan ROI sementara
         cv2.imshow("window", windowed_gray)
         #cv2.waitKey(100)
         #cv2.imshow('img',img)
-        cv2.waitKey(1)
+        #cv2.waitKey(1)
         #cv2.destroyAllWindows()
 
     #membari label jumlah senyum dan jumlah wajah dan menampilkannya
@@ -65,7 +65,6 @@ def detect(filename):
     cv2.putText(img=img,text="Jumlah senyum= " + str(smileCount),org=(0,20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=0.5,color=(0,0,255),thickness=1)
     #img=cv2.resize(img, (0,0), fx=args["scale"], fy=args["scale"])
     cv2.imshow('img',img)
-    cv2.waitKey(1)
+    #cv2.waitKey(1)
     #cv2.destroyAllWindows()
-
-    return img
+    return img, smileCount

@@ -26,7 +26,7 @@ args=vars(argpar.parse_args())
 filename=glob.glob(pathname=args["img"]+str("/*"))
 for f in filename:
     img=cv2.imread(f, 1)
-    result=detect(img)
+    result, smileCount=detect(img)
     if(args["out"]):
         cv2.imwrite("out"+str(os.path.basename(f)), img)
 cv2.destroyAllWindows()
