@@ -1,0 +1,4 @@
+Smile detection
+http://vgg.fiit.stuba.sk/2015-02/smile-detection/
+Kinect Smile Detection
+https://maxawangames.wordpress.com/kinect-smile-detection/
