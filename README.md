@@ -23,7 +23,7 @@ example: p192.jpg, n122.jpg, n221.jpg, p834.jpg
 - TODO: Smile classifier with image masking
 
 ### 2018 January 11
-- Wasting my whole day, ...
+- Wasting my whole day, in axiety...
 
 ### 2018 January 10
-- Kumpulkan paper yang sesuai
+- Gathering relevant papers
