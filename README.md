@@ -7,8 +7,11 @@ Don't clone
 ### dataset format
 #### single potrait
 <p/n>filename
-n = negative, potrait isn't contains a smile
-p = positive, potrait contains a smile
+
+n = negative, potrait isn't contains a smile.
+
+p = positive, potrait contains a smile.
+
 example: p192.jpg, n122.jpg, n221.jpg, p834.jpg
 
 
