@@ -38,7 +38,7 @@ def detect(filename):
 
         #mengubah ukuran wajah sebelum dicari senyumannya.
         windowed_gray = cv2.resize(roi_gray, (55, 55))
-        gray = clahe.apply(gray)
+        #windowed_gray = clahe.apply(windowed_gray)
 
         #mendeteksi senyuman
         smiles=smile_cascade.detectMultiScale(image=windowed_gray,scaleFactor=1.1,minNeighbors=6)

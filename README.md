@@ -19,6 +19,7 @@ example: p192.jpg, n122.jpg, n221.jpg, p834.jpg
 ### 2018 January 12
 - TODO: Optimizing image preprocessing. (ACTIVE)
 - TODO: Preparing single-potrait test data. (ACTIVE)
+..- ROI histogram equalization seems not good. decreasing accurancy.
 - TODO: Smile classifier with KNN
 - TODO: Smile classifier with image masking
 
