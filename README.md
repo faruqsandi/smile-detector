@@ -16,15 +16,19 @@ example: p192.jpg, n122.jpg, n221.jpg, p834.jpg
 
 
 ## TODOLOG
+### 2018 January 15
+- TODO: Smile classifier with KNN + edge detection (ACTIVE)
+  - Preparation: edge detection
+- Coba pakai 
+### 2018 January 14
+- Rainy nose. Ah. Halt.
 ### 2018 January 13
-- TODO: Smile classifier with KNN
-- TODO: Smile classifier with image masking (ACTIVE)
+- FORGOT: Image smoothing after resizing ROI! Oh my!
+- TODO: Smile classifier with image masking (PAUSED) > NOT POSSIBLE
 ### 2018 January 12
 - TODO: Optimizing image preprocessing. (DONE)
    * ROI histogram equalization seems not good. decreasing accurancy.
 - TODO: Preparing single-potrait test data. (DONE)
-- TODO: Smile classifier with KNN
-- TODO: Smile classifier with image masking
 
 ### 2018 January 11
 - Wasting my whole day, in axiety...

@@ -53,6 +53,7 @@ def detect(filename):
             cv2.rectangle(windowed_gray,(mx,my),(mx+mw,my+mh),(0,0,255),1)
             cv2.putText(img=img,text="wajah",org=(x,y),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=0.5,color=(0,0,255),thickness=1)
             cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),1)
+            smileCrop=windowed_gray[my:my+mh, mx:mx+mw]
 
         #menampilkan ROI sementara
         cv2.imshow("window", windowed_gray)
@@ -68,4 +69,6 @@ def detect(filename):
     cv2.imshow('img',img)
     #cv2.waitKey(1)
     #cv2.destroyAllWindows()
-    return img, smileCount
+
+    # mereturn gambar yang terlabeli, jumlah senyum, dan potongan mulut pertama grayscale yang dideteksi
+    return img, smileCount, smileCrop
