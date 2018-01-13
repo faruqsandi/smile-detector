@@ -1,6 +1,6 @@
 # RESULT
 
-## 2018 January 13
+## 2018 January 12
 ### unchanged ROI of faces
 
 <table>
@@ -82,4 +82,3 @@
 |True Positive Rate | 0.6666666666666666|
 |False Positive Rate | 0.6176470588235294|
 |Precision | 0.6440677966101694|
-
