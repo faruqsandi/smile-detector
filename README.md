@@ -19,7 +19,7 @@ example: p192.jpg, n122.jpg, n221.jpg, p834.jpg
 ### 2018 January 15
 - TODO: Smile classifier with KNN + edge detection (ACTIVE)
   - Preparation: edge detection
-- Coba pakai 
+- Coba pakai multiple cascade daripada harus pakai neighbor banyak untuk haar detection.
 ### 2018 January 14
 - Rainy nose. Ah. Halt.
 ### 2018 January 13
