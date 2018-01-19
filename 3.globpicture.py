@@ -18,5 +18,5 @@ for f in filename:
     img=cv2.imread(f, 1)
     result, smileCount=detect(img)
     if(args["out"]):
-        cv2.imwrite("out"+str(os.path.basename(f)), img)
+        cv2.imwrite("output/out"+str(os.path.basename(f)), img)
 cv2.destroyAllWindows()
