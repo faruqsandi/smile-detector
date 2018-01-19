@@ -7,8 +7,8 @@ import os
 
 def detect(filename):
     #mempersiapkan classifier
-    face_cascade = cv2.CascadeClassifier('./cascades/haarcascade_frontalface_default.xml')
-    eyes_cascade = cv2.CascadeClassifier('./cascades/haarcascade_eye.xml')
+    face_cascade = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
+    mouth_cascade = cv2.CascadeClassifier('./haarcascade_mcs_mouth.xml')
     smile_cascade = cv2.CascadeClassifier('./cascades/haarcascade_smile.xml')
     #membaca berkas gambar
     #dimuat dua kali agar tidak perlu repot konversi ke grayscale
@@ -71,4 +71,4 @@ def detect(filename):
     #cv2.destroyAllWindows()
 
     # mereturn gambar yang terlabeli, jumlah senyum, dan potongan mulut pertama grayscale yang dideteksi
-    return img, smileCount
+    return img, smileCount, smileCrop
