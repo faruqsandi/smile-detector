@@ -1,3 +1,7 @@
+#kode pendeteksian lebih baik.
+#digunakan untuk ekstraksi senyum untuk KNN
+#KNN gagal, dibatalkan.
+
 import cv2
 import numpy as np
 import argparse

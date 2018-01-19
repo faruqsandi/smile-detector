@@ -16,6 +16,10 @@ example: p192.jpg, n122.jpg, n221.jpg, p834.jpg
 
 
 ## TODOLOG
+### 2018 Januari 19
+- Undocumented progress -> KNN
+- Smile classifier with KNN + edge detection (CANCELED) > POOR ACCURACY
+
 ### 2018 January 15
 - TODO: Smile classifier with KNN + edge detection (ACTIVE)
   - Preparation: edge detection
@@ -24,10 +28,10 @@ example: p192.jpg, n122.jpg, n221.jpg, p834.jpg
 - Rainy nose. Ah. Halt.
 ### 2018 January 13
 - FORGOT: Image smoothing after resizing ROI! Oh my!
-- TODO: Smile classifier with image masking (PAUSED) > NOT POSSIBLE
+- TODO: Smile classifier with image masking (CANCELED) > NOT POSSIBLE
 ### 2018 January 12
 - TODO: Optimizing image preprocessing. (DONE)
-   * ROI histogram equalization seems not good. decreasing accurancy.
+   * ROI histogram equalization seems not good. decreasing accuracy.
 - TODO: Preparing single-potrait test data. (DONE)
 
 ### 2018 January 11
