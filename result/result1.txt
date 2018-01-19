@@ -1,0 +1,109 @@
+n26.jpg | (n,0) -> false negative
+p194.jpg | (p,0) -> true negative
+p189.jpg | (p,0) -> true negative
+n196.jpg | (n,1) -> false positive
+p17.jpg | (p,1) -> true positive
+p107.jpg | (p,1) -> true positive
+n69.jpg | (n,1) -> false positive
+p98.jpg | (p,1) -> true positive
+p122.jpg | (p,1) -> true positive
+p174.jpg | (p,0) -> true negative
+n32.jpg | (n,1) -> false positive
+n50.jpg | (n,0) -> false negative
+p193.jpg | (p,1) -> true positive
+p93.jpg | (p,1) -> true positive
+p113.jpg | (p,1) -> true positive
+n130.jpg | (n,0) -> false negative
+n29.jpg | (n,0) -> false negative
+p102.jpg | (p,0) -> true negative
+p128.jpg | (p,1) -> true positive
+p53.jpg | (p,1) -> true positive
+n27.jpg | (n,0) -> false negative
+n147.jpg | (n,0) -> false negative
+p179.jpg | (p,0) -> true negative
+p119.jpg | (p,1) -> true positive
+p55.jpg | (p,0) -> true negative
+n41.jpg | (n,1) -> false positive
+p31.jpg | (p,0) -> true negative
+p154.jpg | (p,0) -> true negative
+p171.jpg | (p,1) -> true positive
+n7.jpg | (n,0) -> false negative
+n127.jpg | (n,1) -> false positive
+n45.jpg | (n,0) -> false negative
+p159.jpg | (p,1) -> true positive
+n150.jpg | (n,1) -> false positive
+p202.jpg | (p,1) -> true positive
+n37.jpg | (n,1) -> false positive
+n49.jpg | (n,0) -> false negative
+p73.jpg | (p,1) -> true positive
+p176.jpg | (p,1) -> true positive
+p134.jpg | (p,1) -> true positive
+p200.jpg | (p,1) -> true positive
+p16.jpg | (p,1) -> true positive
+p192.jpg | (p,1) -> true positive
+p0.jpg | (p,0) -> true negative
+n47.jpg | (n,0) -> false negative
+n52.jpg | (n,0) -> false negative
+n163.jpg | (n,0) -> false negative
+n6.jpg | (n,0) -> false negative
+n121.jpg | (n,1) -> false positive
+p184.jpg | (p,1) -> true positive
+p35.jpg | (p,1) -> true positive
+p126.jpg | (p,0) -> true negative
+p109.jpg | (p,0) -> true negative
+n30.jpg | (n,0) -> false negative
+n146.jpg | (n,1) -> false positive
+p97.jpg | (p,1) -> true positive
+p149.jpg | (p,0) -> true negative
+n165.jpg | (n,0) -> false negative
+p139.jpg | (p,0) -> true negative
+n28.jpg | (n,1) -> false positive
+p4.jpg | (p,0) -> true negative
+n96.jpg | (n,1) -> false positive
+p191.jpg | (p,1) -> true positive
+n120.jpg | (n,1) -> false positive
+n138.jpg | (n,0) -> false negative
+n124.jpg | (n,0) -> false negative
+n36.jpg | (n,1) -> false positive
+p187.jpg | (p,1) -> true positive
+p178.jpg | (p,0) -> true negative
+p13.jpg | (p,1) -> true positive
+p133.jpg | (p,1) -> true positive
+p114.jpg | (p,0) -> true negative
+p71.jpg | (p,1) -> true positive
+p136.jpg | (p,1) -> true positive
+p12.jpg | (p,1) -> true positive
+p201.jpg | (p,1) -> true positive
+p173.jpg | (p,1) -> true positive
+p166.jpg | (p,0) -> true negative
+p185.jpg | (p,1) -> true positive
+p42.jpg | (p,1) -> true positive
+p95.jpg | (p,1) -> true positive
+n153.jpg | (n,0) -> false negative
+p186.jpg | (p,1) -> true positive
+p190.jpg | (p,1) -> true positive
+n54.jpg | (n,1) -> false positive
+n8.jpg | (n,0) -> false negative
+p135.jpg | (p,1) -> true positive
+n129.jpg | (n,1) -> false positive
+p197.jpg | (p,1) -> true positive
+p46.jpg | (p,1) -> true positive
+p164.jpg | (p,0) -> true negative
+==================summary==================
+actualPositive = 57
+predictedPositive = 54
+-------------------------------------------
+actualNegative = 34
+predictedNegative = 37
+-------------------------------------------
+truePositive = 39
+trueNegative = 18
+falsePositive = 15
+falseNegative = 19
+-------------------------------------------
+Accuracy = 0.6263736263736264
+Misclassification Rate = 0.37362637362637363
+True Positive Rate = 0.6842105263157895
+False Positive Rate = 0.4411764705882353
+Precision = 0.7222222222222222
+[ INFO:0] Initialize OpenCL runtime...

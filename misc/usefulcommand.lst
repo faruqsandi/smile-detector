@@ -1,0 +1,2 @@
+rename all files and folders within a directory to numbered.
+ls | cat -n | while read n f; do mv "$f" "file-$n.jpg"; done
